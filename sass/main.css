@@ -42,7 +42,7 @@ Polices
 }
 
 .menu3 h3 {
-  font-family: 'Amita', cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
 /*-----------------------------------------------
@@ -442,6 +442,7 @@ Troisième menu
 .menu3 {
   background-color: #edefef;
   color: #000000;
+  padding: 30px 20px 40px 20px;
 }
 
 .menu3 h3 {
@@ -499,6 +500,11 @@ Troisième menu
 .menu3__dessert .underline:hover {
   background-size: 100% 100%;
   cursor: default;
+}
+
+.section-menu__contain {
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 /*-----------------------------------------------

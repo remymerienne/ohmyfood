@@ -1,0 +1,18 @@
+/*-----------------------------------------------
+Header général 
+-----------------------------------------------*/
+
+// En-tête du site
+.header {
+    height: 80px;
+    text-align: center;
+    background-color: $theme-background;
+
+    h1 {
+        margin: 0px;
+        font-size: 3em;
+        font-weight: 900;
+        letter-spacing: -5px;
+        line-height: 80px;
+    }
+}

@@ -1,0 +1,63 @@
+/*-----------------------------------------------
+Deuxième menu
+-----------------------------------------------*/
+
+.menu2 {
+    background-color: #fff5fe;
+    padding: 30px 20px 40px 20px;
+
+    // Nom du restaurant en dégradé
+    h3 {
+        font-weight: 500;
+        font-size: 2em;
+        background: linear-gradient(to right, $menu2-color1, $menu2-color2, $menu2-color3);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    // Couleurs et soulignement de la section 'entrée' 
+    &__entree {
+        color: $menu2-color1;
+
+        .underline {
+            @include underline($menu2-color1);
+
+            &:hover {
+                @include underline-hover
+            }
+        }
+    }
+
+    // Couleurs et soulignement de la section 'plat'
+    &__plat {
+        color: $menu2-color2;
+
+        .underline {
+            @include underline($menu2-color2);
+
+            &:hover {
+                @include underline-hover
+            }
+        }
+    }
+
+    // Couleurs et soulignement de la section 'dessert'
+    &__dessert {
+        color: $menu2-color3;
+
+        .underline {
+            @include underline($menu2-color3);
+
+            &:hover {
+                @include underline-hover
+            }
+        }
+    }
+}
+
+// Retrait par rapport à l'en-tête
+.section-menu__contain {
+    margin-left: 30px;
+    margin-right: 30px;
+}

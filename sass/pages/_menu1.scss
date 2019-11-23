@@ -1,0 +1,49 @@
+/*-----------------------------------------------
+Premier menu
+-----------------------------------------------*/
+
+.menu1 {
+    background-color: #fde0dc;
+    color: $menu1-color;
+    padding: 30px 60px 40px 60px;
+    width: 58%;
+
+    // Nom du restaurant
+    h3 {
+        font-weight: 400;
+        font-size: 2.5em;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    // Image 'Note de musique' du header
+    .menu__header img {
+        width: 15%;
+    }
+
+    // Footer du menu
+    &__footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // Image 'Note de musique' du footer
+        img {
+            width: 8%;
+        }
+
+        p {
+            font-size: 1.7em;
+            font-weight: 500;
+        }
+    }
+
+    // Soulignement des titres de sections
+    .underline {
+        @include underline($menu1-color);
+
+        &:hover {
+            @include underline-hover;
+        }
+    }
+}

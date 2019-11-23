@@ -1,0 +1,12 @@
+@import 'utils/variables';
+@import 'utils/mixins';
+
+@import 'base/base';
+@import 'base/fonts';
+
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/container';
+@import 'layouts/menu';
+
+@import 'pages/menu2.scss';

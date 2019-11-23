@@ -1,0 +1,36 @@
+/*-----------------------------------------------
+Footer général avec effet wiggle sur les liens
+-----------------------------------------------*/
+
+// Pied de page
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $theme-background;
+
+    a {
+        margin: auto 30px;
+        font-weight: 600;
+        font-size: 1.2em;
+
+        &:hover {
+            animation: wiggle 150ms infinite;
+        }
+    }
+}
+
+// Animation 'wiggle' des liens du footer
+@keyframes wiggle {
+    25% {
+        transform: translateX(1%);
+    }
+
+    75% {
+        transform: translateX(-1%);
+    }
+}

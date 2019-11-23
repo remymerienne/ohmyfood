@@ -1,0 +1,91 @@
+/*-----------------------------------------------
+Page d'accueil
+-----------------------------------------------*/
+
+// Blocks des restaurants
+.restos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__anim {
+        width: 35%;
+        margin: 20px;
+        box-shadow: 1px 1px 7px silver;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            transition: all 500ms ease-out;
+
+            // Effet de zoom + fondu sur les images
+            &:hover {
+                transform: scale(1.2);
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+// Bouton 'Prochainement'
+.btn-soon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 45px;
+    margin: 30px auto 0px auto;
+    text-align: center;
+    border-radius: 10px;
+    background-color: $theme-background;
+    color: $theme-text;
+
+    p {
+        font-weight: 600;
+        font-size: 1.6em;
+    }
+
+    // Block contenant les 3 points de suspensions 
+    .load {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 20%;
+        height: 20px;
+        margin-left: 15px;
+
+        // propriétés des points de suspensions et de l'animation
+        &__point {
+            width: 10px;
+            height: 10px;
+            background-color: $theme-text;
+            animation: point 1.3s infinite;
+            animation-direction: alternate;
+        }
+
+        // Délais individuels des animations
+        &__point--1 {
+            animation-delay: 200ms;
+        }
+
+        &__point--2 {
+            animation-delay: 600ms;
+        }
+
+        &__point--3 {
+            animation-delay: 1000ms;
+        }
+    }
+}
+
+@keyframes point {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

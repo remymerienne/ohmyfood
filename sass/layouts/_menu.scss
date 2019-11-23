@@ -1,0 +1,57 @@
+/*-----------------------------------------------
+Structure générale des pages de menus
+-----------------------------------------------*/
+
+// Nom du restaurants
+.restaurant-title {
+    text-align: center;
+    margin-top: 45px;
+}
+
+// Block menu de restaurant
+.menu {
+    width: 66%;
+    margin: 20px auto 0px auto;
+    box-shadow: 1px 1px 7px silver;
+
+    // En-tête de menu
+    &__header {
+        text-align: center;
+    }
+}
+
+// Block entrée, plat ou dessert
+.section-menu {
+    margin-bottom: 50px;
+
+    // En-tête de section
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        // Images décoratives autour du titre des sections
+        .svg {
+            width: 30%;
+        }
+    }
+
+    // Block contenant les plats et les prix
+    &__contain {
+        display: flex;
+        justify-content: space-between;
+
+        // Description des plats 
+        .description {
+            font-size: 0.8em;
+            line-height: 20px;
+        }
+
+        // Prix des plats 
+        .prix {
+            font-weight: 500;
+            font-size: 1.1em;
+            line-height: 13px;
+        }
+    }
+}

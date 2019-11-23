@@ -1,0 +1,13 @@
+// Mixin 'underline' pour l'état de soulignement primaire des titres de sections de menu
+@mixin underline($color) {
+    background-image: linear-gradient(180deg, transparent 80%, $color);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 200ms ease-out;
+}
+
+// Mixin 'underline-hover' pour le soulignement des titres de sections de menu
+@mixin underline-hover {
+    background-size: 100% 100%;
+    cursor: default;
+}

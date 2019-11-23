@@ -1,0 +1,35 @@
+/*-----------------------------------------------
+Polices 
+-----------------------------------------------*/
+
+// Police principale
+.header h1,
+.footer a,
+.restaurant-title,
+.btn-soon p {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+// Polices du premier menu
+.menu1 {
+    font-family: 'Kalam', cursive;
+    h3, &__footer p {
+        font-family: 'Caveat Brush', cursive;
+    }
+}
+
+// Police du deuxième menu
+.menu2 {
+    font-family: 'Playfair Display', serif;
+    h3 {
+        font-family: 'Amita', cursive;
+    }
+}
+
+// Police du troisième menu
+.menu3 {
+    font-family: 'Kalam', cursive;
+    h3 {
+        font-family: 'Amita', cursive;
+    }
+}

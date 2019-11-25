@@ -119,14 +119,17 @@ Footer général avec effet wiggle sur les liens
 Block conteneur général
 -----------------------------------------------*/
 .container {
-  width: 60%;
-  margin: 20px auto 90px auto;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 90px;
 }
 
 /*-----------------------------------------------
 Page d'accueil
 -----------------------------------------------*/
 .restos {
+  width: 60%;
+  margin: 0px auto 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,7 +172,7 @@ Page d'accueil
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 40%;
+  width: 25%;
   height: 45px;
   margin: 30px auto 0px auto;
   text-align: center;

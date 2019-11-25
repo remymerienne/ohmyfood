@@ -119,8 +119,9 @@ Footer général avec effet wiggle sur les liens
 Block conteneur général
 -----------------------------------------------*/
 .container {
-  width: 60%;
-  margin: 20px auto 90px auto;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 90px;
 }
 
 /*-----------------------------------------------
@@ -132,7 +133,7 @@ Structure générale des pages de menus
 }
 
 .menu {
-  width: 66%;
+  width: 45%;
   margin: 20px auto 0px auto;
   -webkit-box-shadow: 1px 1px 7px silver;
           box-shadow: 1px 1px 7px silver;
@@ -160,6 +161,10 @@ Structure générale des pages de menus
 
 .section-menu__header .svg {
   width: 30%;
+}
+
+.section-menu__header h4 {
+  font-size: 1.1em;
 }
 
 .section-menu__contain {
@@ -255,7 +260,7 @@ Deuxième menu
 }
 
 .section-menu__contain {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 /*# sourceMappingURL=menu2.css.map */

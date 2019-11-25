@@ -10,7 +10,7 @@ Structure générale des pages de menus
 
 // Block menu de restaurant
 .menu {
-    width: 66%;
+    width: 45%;
     margin: 20px auto 0px auto;
     box-shadow: 1px 1px 7px silver;
 
@@ -33,6 +33,11 @@ Structure générale des pages de menus
         // Images décoratives autour du titre des sections
         .svg {
             width: 30%;
+        }
+
+        // Titre de section
+        h4 {
+            font-size: 1.1em;
         }
     }
 

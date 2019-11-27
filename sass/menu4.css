@@ -196,66 +196,70 @@ Structure générale des pages de menus
 }
 
 /*-----------------------------------------------
-Troisième menu
+Quatrième menu
 -----------------------------------------------*/
-.menu3 {
-  background-color: #edefef;
+.menu4 {
+  background-color: #fdfffd;
   color: #000000;
   padding: 30px 20px 40px 20px;
 }
 
-.menu3 h3 {
+.menu4 h3 {
   font-weight: 500;
   font-size: 2.6em;
-  background: -webkit-gradient(linear, left top, right top, from(#0228dd), color-stop(#0670f3), to(#229df9));
-  background: linear-gradient(to right, #0228dd, #0670f3, #229df9);
+  background: -webkit-gradient(linear, left top, right top, from(#489b40), color-stop(#89d262), to(#beff7f));
+  background: linear-gradient(to right, #489b40, #89d262, #beff7f);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
-.menu3 h4 {
+.menu4 h4 {
   font-weight: 400;
 }
 
-.menu3__entree .underline {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), to(#0228dd));
-  background-image: linear-gradient(180deg, transparent 80%, #0228dd);
+.menu4 .svg {
+  width: 35%;
+}
+
+.menu4__entree .underline {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), to(#489b40));
+  background-image: linear-gradient(180deg, transparent 80%, #489b40);
   background-repeat: no-repeat;
   background-size: 0% 100%;
   -webkit-transition: background-size 200ms ease-out;
   transition: background-size 200ms ease-out;
 }
 
-.menu3__entree .underline:hover {
+.menu4__entree .underline:hover {
   background-size: 100% 100%;
   cursor: default;
 }
 
-.menu3__plat .underline {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), to(#0670f3));
-  background-image: linear-gradient(180deg, transparent 80%, #0670f3);
+.menu4__plat .underline {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), to(#89d262));
+  background-image: linear-gradient(180deg, transparent 80%, #89d262);
   background-repeat: no-repeat;
   background-size: 0% 100%;
   -webkit-transition: background-size 200ms ease-out;
   transition: background-size 200ms ease-out;
 }
 
-.menu3__plat .underline:hover {
+.menu4__plat .underline:hover {
   background-size: 100% 100%;
   cursor: default;
 }
 
-.menu3__dessert .underline {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), to(#229df9));
-  background-image: linear-gradient(180deg, transparent 80%, #229df9);
+.menu4__dessert .underline {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), to(#beff7f));
+  background-image: linear-gradient(180deg, transparent 80%, #beff7f);
   background-repeat: no-repeat;
   background-size: 0% 100%;
   -webkit-transition: background-size 200ms ease-out;
   transition: background-size 200ms ease-out;
 }
 
-.menu3__dessert .underline:hover {
+.menu4__dessert .underline:hover {
   background-size: 100% 100%;
   cursor: default;
 }
@@ -264,4 +268,4 @@ Troisième menu
   margin-left: 35px;
   margin-right: 35px;
 }
-/*# sourceMappingURL=menu3.css.map */
+/*# sourceMappingURL=menu4.css.map */

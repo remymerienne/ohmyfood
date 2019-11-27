@@ -1,9 +1,9 @@
 /*-----------------------------------------------
-Troisième menu
+Quatrième menu
 -----------------------------------------------*/
 
-.menu3 {
-    background-color: #edefef;
+.menu4 {
+    background-color: #fdfffd;
     color: #000000;
     padding: 30px 20px 40px 20px;
 
@@ -11,7 +11,7 @@ Troisième menu
     h3 {
         font-weight: 500;
         font-size: 2.6em;
-        background: linear-gradient(to right, $menu3-color1, $menu3-color2, $menu3-color3);
+        background: linear-gradient(to right, $menu4-color1, $menu4-color2, $menu4-color3);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -20,11 +20,15 @@ Troisième menu
         font-weight: 400;
     }
 
+    .svg {
+        width: 35%;
+    }
+
     // Couleurs et soulignement de la section 'entrée' 
     &__entree {
 
         .underline {
-            @include underline($menu3-color1);
+            @include underline($menu4-color1);
 
             &:hover {
                 @include underline-hover
@@ -36,7 +40,7 @@ Troisième menu
     &__plat {
 
         .underline {
-            @include underline($menu3-color2);
+            @include underline($menu4-color2);
 
             &:hover {
                 @include underline-hover
@@ -48,7 +52,7 @@ Troisième menu
     &__dessert {
 
         .underline {
-            @include underline($menu3-color3);
+            @include underline($menu4-color3);
 
             &:hover {
                 @include underline-hover
@@ -62,3 +66,4 @@ Troisième menu
     margin-left: 35px;
     margin-right: 35px;
 }
+

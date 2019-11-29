@@ -10,6 +10,10 @@ Page d'accueil
     flex-wrap: wrap;
     justify-content: center;
 
+    @include small {
+        width: 90%
+    }
+
     &__anim {
         width: 35%;
         margin: 20px;
@@ -36,8 +40,8 @@ Page d'accueil
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25%;
-    height: 45px;
+    width: 270px;
+    height: 40px;
     margin: 30px auto 0px auto;
     text-align: center;
     border-radius: 10px;
@@ -46,7 +50,7 @@ Page d'accueil
 
     p {
         font-weight: 600;
-        font-size: 1.6em;
+        font-size: 21px;
     }
 
     // Block contenant les 3 points de suspensions 
@@ -60,8 +64,8 @@ Page d'accueil
 
         // propriétés des points de suspensions et de l'animation
         &__point {
-            width: 10px;
-            height: 10px;
+            width: 8px;
+            height: 8px;
             background-color: $theme-text;
             animation: point 1.3s infinite;
             animation-direction: alternate;

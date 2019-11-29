@@ -57,6 +57,7 @@ Polices
 Header général 
 -----------------------------------------------*/
 .header {
+  width: 100%;
   height: 80px;
   text-align: center;
   background-color: #579c87;
@@ -94,6 +95,12 @@ Footer général avec effet wiggle sur les liens
   margin: auto 30px;
   font-weight: 600;
   font-size: 1.2em;
+}
+
+@media all and (max-width: 470px) {
+  .footer a {
+    font-size: 0.8em;
+  }
 }
 
 .footer a:hover {
@@ -203,6 +210,25 @@ Premier menu
   color: #3d1319;
   padding: 30px 60px 40px 60px;
   width: 40%;
+}
+
+@media all and (max-width: 1120px) {
+  .menu1 {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .menu1 {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .menu1 {
+    width: 90%;
+    padding: 30px 20px 40px 20px;
+  }
 }
 
 .menu1 h3 {

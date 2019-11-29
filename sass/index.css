@@ -57,6 +57,7 @@ Polices
 Header général 
 -----------------------------------------------*/
 .header {
+  width: 100%;
   height: 80px;
   text-align: center;
   background-color: #579c87;
@@ -94,6 +95,12 @@ Footer général avec effet wiggle sur les liens
   margin: auto 30px;
   font-weight: 600;
   font-size: 1.2em;
+}
+
+@media all and (max-width: 470px) {
+  .footer a {
+    font-size: 0.8em;
+  }
 }
 
 .footer a:hover {
@@ -148,6 +155,12 @@ Page d'accueil
           justify-content: center;
 }
 
+@media all and (max-width: 470px) {
+  .restos {
+    width: 90%;
+  }
+}
+
 .restos__anim {
   width: 35%;
   margin: 20px;
@@ -180,8 +193,8 @@ Page d'accueil
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 25%;
-  height: 45px;
+  width: 270px;
+  height: 40px;
   margin: 30px auto 0px auto;
   text-align: center;
   border-radius: 10px;
@@ -191,7 +204,7 @@ Page d'accueil
 
 .btn-soon p {
   font-weight: 600;
-  font-size: 1.6em;
+  font-size: 21px;
 }
 
 .btn-soon .load {
@@ -209,8 +222,8 @@ Page d'accueil
 }
 
 .btn-soon .load__point {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background-color: #fdcb46;
   -webkit-animation: point 1.3s infinite;
           animation: point 1.3s infinite;

@@ -8,6 +8,19 @@ Premier menu
     padding: 30px 60px 40px 60px;
     width: 40%;
 
+    @include xLarge {
+        width: 60%;
+    }
+
+    @include large {
+        width: 80%;
+    }
+
+    @include medium {
+        width: 90%;
+        padding: 30px 20px 40px 20px;
+    }
+
     // Nom du restaurant
     h3 {
         font-weight: 400;

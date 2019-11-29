@@ -57,6 +57,7 @@ Polices
 Header général 
 -----------------------------------------------*/
 .header {
+  width: 100%;
   height: 80px;
   text-align: center;
   background-color: #579c87;
@@ -94,6 +95,12 @@ Footer général avec effet wiggle sur les liens
   margin: auto 30px;
   font-weight: 600;
   font-size: 1.2em;
+}
+
+@media all and (max-width: 470px) {
+  .footer a {
+    font-size: 0.8em;
+  }
 }
 
 .footer a:hover {
@@ -211,6 +218,12 @@ Page d'accueil
           justify-content: center;
 }
 
+@media all and (max-width: 470px) {
+  .restos {
+    width: 90%;
+  }
+}
+
 .restos__anim {
   width: 35%;
   margin: 20px;
@@ -243,8 +256,8 @@ Page d'accueil
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 25%;
-  height: 45px;
+  width: 270px;
+  height: 40px;
   margin: 30px auto 0px auto;
   text-align: center;
   border-radius: 10px;
@@ -254,7 +267,7 @@ Page d'accueil
 
 .btn-soon p {
   font-weight: 600;
-  font-size: 1.6em;
+  font-size: 21px;
 }
 
 .btn-soon .load {
@@ -272,8 +285,8 @@ Page d'accueil
 }
 
 .btn-soon .load__point {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background-color: #fdcb46;
   -webkit-animation: point 1.3s infinite;
           animation: point 1.3s infinite;
@@ -328,6 +341,25 @@ Premier menu
   width: 40%;
 }
 
+@media all and (max-width: 1120px) {
+  .menu1 {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .menu1 {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .menu1 {
+    width: 90%;
+    padding: 30px 20px 40px 20px;
+  }
+}
+
 .menu1 h3 {
   font-weight: 400;
   font-size: 2.5em;
@@ -380,6 +412,24 @@ Deuxième menu
 .menu2 {
   background-color: #fff5fe;
   padding: 30px 20px 40px 20px;
+}
+
+@media all and (max-width: 1120px) {
+  .menu2 {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .menu2 {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .menu2 {
+    width: 90%;
+  }
 }
 
 .menu2 h3 {
@@ -512,6 +562,80 @@ Troisième menu
 }
 
 .menu3__dessert .underline:hover {
+  background-size: 100% 100%;
+  cursor: default;
+}
+
+.section-menu__contain {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+/*-----------------------------------------------
+Quatrième menu
+-----------------------------------------------*/
+.menu4 {
+  background-color: #fdfffd;
+  color: #000000;
+  padding: 30px 20px 40px 20px;
+}
+
+.menu4 h3 {
+  font-weight: 500;
+  font-size: 2.6em;
+  background: -webkit-gradient(linear, left top, right top, from(#489b40), color-stop(#89d262), to(#beff7f));
+  background: linear-gradient(to right, #489b40, #89d262, #beff7f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu4 h4 {
+  font-weight: 400;
+}
+
+.menu4 .svg {
+  width: 35%;
+}
+
+.menu4__entree .underline {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), to(#489b40));
+  background-image: linear-gradient(180deg, transparent 80%, #489b40);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 200ms ease-out;
+  transition: background-size 200ms ease-out;
+}
+
+.menu4__entree .underline:hover {
+  background-size: 100% 100%;
+  cursor: default;
+}
+
+.menu4__plat .underline {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), to(#89d262));
+  background-image: linear-gradient(180deg, transparent 80%, #89d262);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 200ms ease-out;
+  transition: background-size 200ms ease-out;
+}
+
+.menu4__plat .underline:hover {
+  background-size: 100% 100%;
+  cursor: default;
+}
+
+.menu4__dessert .underline {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), to(#beff7f));
+  background-image: linear-gradient(180deg, transparent 80%, #beff7f);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 200ms ease-out;
+  transition: background-size 200ms ease-out;
+}
+
+.menu4__dessert .underline:hover {
   background-size: 100% 100%;
   cursor: default;
 }

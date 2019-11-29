@@ -6,6 +6,18 @@ Deuxième menu
     background-color: #fff5fe;
     padding: 30px 20px 40px 20px;
 
+    @include xLarge {
+        width: 60%;
+    }
+
+    @include large {
+        width: 80%;
+    }
+
+    @include medium {
+        width: 90%;
+    }
+
     // Nom du restaurant en dégradé
     h3 {
         font-weight: 500;

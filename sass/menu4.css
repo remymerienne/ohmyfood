@@ -57,6 +57,7 @@ Polices
 Header général 
 -----------------------------------------------*/
 .header {
+  width: 100%;
   height: 80px;
   text-align: center;
   background-color: #579c87;
@@ -94,6 +95,12 @@ Footer général avec effet wiggle sur les liens
   margin: auto 30px;
   font-weight: 600;
   font-size: 1.2em;
+}
+
+@media all and (max-width: 470px) {
+  .footer a {
+    font-size: 0.8em;
+  }
 }
 
 .footer a:hover {
@@ -147,6 +154,13 @@ Structure générale des pages de menus
           box-shadow: 1px 1px 7px silver;
 }
 
+@media all and (max-width: 600px) {
+  .menu {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 .menu__header {
   text-align: center;
 }
@@ -171,6 +185,12 @@ Structure générale des pages de menus
   width: 30%;
 }
 
+@media all and (max-width: 470px) {
+  .section-menu__header .svg {
+    width: 25%;
+  }
+}
+
 .section-menu__header h4 {
   font-size: 1.1em;
 }
@@ -184,9 +204,34 @@ Structure générale des pages de menus
           justify-content: space-between;
 }
 
+@media all and (max-width: 600px) {
+  .section-menu__contain {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media all and (max-width: 470px) {
+  .section-menu__contain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .section-menu__contain .description {
   font-size: 0.9em;
   line-height: 20px;
+}
+
+@media all and (max-width: 470px) {
+  .section-menu__contain .description {
+    text-align: center;
+  }
 }
 
 .section-menu__contain .prix {
@@ -204,6 +249,25 @@ Quatrième menu
   padding: 30px 20px 40px 20px;
 }
 
+@media all and (max-width: 1120px) {
+  .menu4 {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .menu4 {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .menu4 {
+    width: 100%;
+    padding: 30px 0px 40px 0px;
+  }
+}
+
 .menu4 h3 {
   font-weight: 500;
   font-size: 2.6em;
@@ -216,10 +280,6 @@ Quatrième menu
 
 .menu4 h4 {
   font-weight: 400;
-}
-
-.menu4 .svg {
-  width: 35%;
 }
 
 .menu4__entree .underline {
@@ -267,5 +327,12 @@ Quatrième menu
 .section-menu__contain {
   margin-left: 35px;
   margin-right: 35px;
+}
+
+@media all and (max-width: 1120px) {
+  .section-menu__contain {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 /*# sourceMappingURL=menu4.css.map */

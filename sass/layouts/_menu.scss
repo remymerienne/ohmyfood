@@ -14,6 +14,10 @@ Structure générale des pages de menus
     margin: 20px auto 0px auto;
     box-shadow: 1px 1px 7px silver;
 
+    @include medium {
+        box-shadow: none;
+    }
+
     // En-tête de menu
     &__header {
         text-align: center;
@@ -33,6 +37,10 @@ Structure générale des pages de menus
         // Images décoratives autour du titre des sections
         .svg {
             width: 30%;
+
+            @include small {
+                width: 25%;
+            }
         }
 
         // Titre de section
@@ -46,10 +54,24 @@ Structure générale des pages de menus
         display: flex;
         justify-content: space-between;
 
+        @include medium {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        @include small {
+            flex-direction: column;
+            align-items: center;
+        }
+
         // Description des plats 
         .description {
             font-size: 0.9em;
             line-height: 20px;
+
+            @include small {
+                text-align: center;
+            }
         }
 
         // Prix des plats 

@@ -154,6 +154,13 @@ Structure générale des pages de menus
           box-shadow: 1px 1px 7px silver;
 }
 
+@media all and (max-width: 600px) {
+  .menu {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 .menu__header {
   text-align: center;
 }
@@ -178,6 +185,12 @@ Structure générale des pages de menus
   width: 30%;
 }
 
+@media all and (max-width: 470px) {
+  .section-menu__header .svg {
+    width: 25%;
+  }
+}
+
 .section-menu__header h4 {
   font-size: 1.1em;
 }
@@ -191,9 +204,34 @@ Structure générale des pages de menus
           justify-content: space-between;
 }
 
+@media all and (max-width: 600px) {
+  .section-menu__contain {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media all and (max-width: 470px) {
+  .section-menu__contain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .section-menu__contain .description {
   font-size: 0.9em;
   line-height: 20px;
+}
+
+@media all and (max-width: 470px) {
+  .section-menu__contain .description {
+    text-align: center;
+  }
 }
 
 .section-menu__contain .prix {
@@ -226,8 +264,8 @@ Premier menu
 
 @media all and (max-width: 600px) {
   .menu1 {
-    width: 90%;
-    padding: 30px 20px 40px 20px;
+    width: 100%;
+    padding: 30px 0px 40px 0px;
   }
 }
 

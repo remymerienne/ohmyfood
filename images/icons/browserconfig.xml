@@ -6,7 +6,7 @@
             <square150x150logo src="https://remymerienne.github.io/ohmyfood/images/icons/mstile-150x150.png"/>
             <square310x310logo src="https://remymerienne.github.io/ohmyfood/images/icons/mstile-310x310.png"/>
             <wide310x150logo src="https://remymerienne.github.io/ohmyfood/images/icons/mstile-310x150.png"/>
-            <TileColor>#579c87</TileColor>
+            <TileColor>#fdcb46</TileColor>
         </tile>
     </msapplication>
 </browserconfig>

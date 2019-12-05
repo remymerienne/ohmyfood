@@ -103,6 +103,12 @@ Footer général avec effet wiggle sur les liens
   }
 }
 
+@media all and (max-width: 350px) {
+  .footer a {
+    font-size: 0.7em;
+  }
+}
+
 .footer a:hover {
   -webkit-animation: wiggle 150ms infinite;
           animation: wiggle 150ms infinite;

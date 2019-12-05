@@ -36,3 +36,9 @@
         @content;
     }
 }
+
+@mixin xSmall {
+    @media all and (max-width: map-get($breakpoints, xSmall)) {
+        @content;
+    }
+}

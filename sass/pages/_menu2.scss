@@ -33,6 +33,10 @@ Deuxième menu
         @include xLarge {
             font-size: 0.9em;
         }
+
+        @include xSmall {
+            font-size: 0.8em;
+        }
     }
 
     // Couleurs et soulignement de la section 'entrée' 

@@ -2,7 +2,24 @@
 Page des mentions légales
 -----------------------------------------------*/
 
-// <div> contenant l'image des mentions legales
-.mentions {
-    text-align: center;
+.container img {
+    display: block;
+    width: 40%;
+    margin: 0px auto 0px auto;
+
+    @include xLarge {
+        width: 50%;
+    }
+
+    @include large {
+        width: 60%;
+    }
+
+    @include medium {
+        width: 70%;
+    }
+
+    @include small {
+        width: 80%;
+    }
 }

@@ -22,6 +22,10 @@ Footer général avec effet wiggle sur les liens
             font-size: 0.8em;
         }
 
+        @include xSmall {
+            font-size: 0.7em;
+        }
+
         &:hover {
             animation: wiggle 150ms infinite;
         }

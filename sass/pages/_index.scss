@@ -10,7 +10,7 @@ Page d'accueil
     flex-wrap: wrap;
     justify-content: center;
 
-    @include small {
+    @include sm {
         width: 90%
     }
 

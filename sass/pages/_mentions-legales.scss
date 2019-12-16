@@ -7,19 +7,19 @@ Page des mentions légales
     width: 40%;
     margin: 0px auto 0px auto;
 
-    @include xLarge {
+    @include xl {
         width: 50%;
     }
 
-    @include large {
+    @include lg {
         width: 60%;
     }
 
-    @include medium {
+    @include md {
         width: 70%;
     }
 
-    @include small {
+    @include sm {
         width: 80%;
     }
 }

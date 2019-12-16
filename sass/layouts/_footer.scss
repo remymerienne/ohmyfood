@@ -18,11 +18,11 @@ Footer général avec effet wiggle sur les liens
         font-weight: 600;
         font-size: 1.2em;
 
-        @include small {
+        @include sm {
             font-size: 0.8em;
         }
 
-        @include xSmall {
+        @include xs {
             font-size: 0.7em;
         }
 

@@ -8,15 +8,15 @@ Premier menu
     padding: 30px 60px 40px 60px;
     width: 40%;
 
-    @include xLarge {
+    @include xl {
         width: 60%;
     }
 
-    @include large {
+    @include lg {
         width: 80%;
     }
 
-    @include medium {
+    @include md {
         width: 100%;
         padding: 30px 0px 40px 0px;
     }

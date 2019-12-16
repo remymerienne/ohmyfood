@@ -6,15 +6,15 @@ Deuxième menu
     background-color: #fff5fe;
     padding: 30px 20px 40px 20px;
 
-    @include xLarge {
+    @include xl {
         width: 60%;
     }
 
-    @include large {
+    @include lg {
         width: 80%;
     }
 
-    @include medium {
+    @include md {
         width: 100%;
         padding: 30px 0px 40px 0px;
     }
@@ -30,11 +30,11 @@ Deuxième menu
     }
 
     h4 {
-        @include xLarge {
+        @include xl {
             font-size: 0.9em;
         }
 
-        @include xSmall {
+        @include xs {
             font-size: 0.8em;
         }
     }
@@ -84,7 +84,7 @@ Deuxième menu
     margin-left: 35px;
     margin-right: 35px;
 
-    @include xLarge {
+    @include xl {
         margin-left: 10px;
         margin-right: 10px;
     }

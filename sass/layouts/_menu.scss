@@ -14,7 +14,7 @@ Structure générale des pages de menus
     margin: 20px auto 0px auto;
     box-shadow: 1px 1px 7px silver;
 
-    @include medium {
+    @include md {
         box-shadow: none;
     }
 
@@ -38,7 +38,7 @@ Structure générale des pages de menus
         .svg {
             width: 30%;
 
-            @include small {
+            @include sm {
                 width: 25%;
             }
         }
@@ -54,12 +54,12 @@ Structure générale des pages de menus
         display: flex;
         justify-content: space-between;
 
-        @include medium {
+        @include md {
             margin-left: 10px;
             margin-right: 10px;
         }
 
-        @include small {
+        @include sm {
             flex-direction: column;
             align-items: center;
         }
@@ -69,7 +69,7 @@ Structure générale des pages de menus
             font-size: 0.9em;
             line-height: 20px;
 
-            @include small {
+            @include sm {
                 text-align: center;
             }
         }

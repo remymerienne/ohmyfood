@@ -279,7 +279,6 @@ Quatrième menu
   font-size: 2.6em;
   background: -webkit-gradient(linear, left top, right top, from(#489b40), color-stop(#89d262), to(#beff7f));
   background: linear-gradient(to right, #489b40, #89d262, #beff7f);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
